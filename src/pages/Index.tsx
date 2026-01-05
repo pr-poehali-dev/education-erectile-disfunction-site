@@ -30,6 +30,7 @@ export default function Index() {
           <div className="hidden md:flex items-center gap-8">
             <a href="#problem" className="text-sm font-medium hover:text-primary transition-colors">О проблеме</a>
             <a href="#program" className="text-sm font-medium hover:text-primary transition-colors">Программа</a>
+            <a href="#pricing" className="text-sm font-medium hover:text-primary transition-colors">Цены</a>
             <a href="#reviews" className="text-sm font-medium hover:text-primary transition-colors">Отзывы</a>
             <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">Контакты</a>
           </div>
@@ -517,6 +518,121 @@ export default function Index() {
         </div>
       </section>
 
+      <section id="pricing" className="py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+        <div className="container mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">Стоимость программ</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Выберите формат, который подходит именно вам
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="border-2 hover:shadow-2xl transition-all relative">
+              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-primary text-white px-6 py-2 rounded-full text-sm font-semibold">
+                Популярный выбор
+              </div>
+              <CardHeader className="text-center pt-8">
+                <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="BookOpen" className="text-primary" size={40} />
+                </div>
+                <CardTitle className="text-3xl mb-2">Полный курс</CardTitle>
+                <CardDescription className="text-lg">8-недельная программа обучения</CardDescription>
+                <div className="mt-6">
+                  <div className="text-5xl font-bold text-primary">9 950 ₽</div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 pt-6">
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <span>40+ видео-уроков с подробными инструкциями</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <span>Методические материалы и PDF-гайды</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <span>Пошаговый план на 8 недель</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <span>Доступ к материалам навсегда</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-primary mt-1 flex-shrink-0" size={20} />
+                  <span>Поддержка в чате 24/7</span>
+                </div>
+                <div className="pt-6">
+                  <Button size="lg" className="w-full text-lg" asChild>
+                    <a href="#contact">Записаться на курс</a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:shadow-2xl transition-all">
+              <CardHeader className="text-center">
+                <div className="w-20 h-20 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <Icon name="Users" className="text-accent" size={40} />
+                </div>
+                <CardTitle className="text-3xl mb-2">Индивидуальная консультация</CardTitle>
+                <CardDescription className="text-lg">Персональная работа со специалистом</CardDescription>
+                <div className="mt-6">
+                  <div className="text-5xl font-bold text-accent">15 000 ₽</div>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4 pt-6">
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={20} />
+                  <span>Индивидуальная диагностика вашего случая</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={20} />
+                  <span>Персональный план лечения</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={20} />
+                  <span>Онлайн-сессия 60 минут</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={20} />
+                  <span>Рекомендации с учётом ваших особенностей</span>
+                </div>
+                <div className="flex gap-3">
+                  <Icon name="CheckCircle2" className="text-accent mt-1 flex-shrink-0" size={20} />
+                  <span>Поддержка в течение месяца после консультации</span>
+                </div>
+                <div className="pt-6">
+                  <Button size="lg" variant="outline" className="w-full text-lg border-2" asChild>
+                    <a href="#contact">Записаться на консультацию</a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Card className="max-w-2xl mx-auto border-2 bg-gradient-to-r from-blue-50 to-orange-50">
+              <CardContent className="py-8">
+                <div className="flex items-center justify-center gap-3 mb-4">
+                  <Icon name="Gift" className="text-primary" size={32} />
+                  <h3 className="text-2xl font-bold">Специальное предложение</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  При покупке полного курса — индивидуальная консультация со скидкой 50%
+                </p>
+                <div className="inline-block">
+                  <div className="text-3xl font-bold text-primary">
+                    Курс + Консультация = <span className="line-through text-muted-foreground">24 950 ₽</span> 17 450 ₽
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" className="py-20 px-4 bg-gradient-to-br from-primary/5 via-white to-accent/5">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-12">
@@ -547,7 +663,25 @@ export default function Index() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Телефон</p>
-                    <p className="text-muted-foreground">+7 (999) 123-45-67</p>
+                    <a href="tel:+79961038603" className="text-muted-foreground hover:text-primary transition-colors">+7 (996) 103-86-03</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-green-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="MessageCircle" className="text-green-600" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">WhatsApp</p>
+                    <a href="https://wa.me/79961038603" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-600 transition-colors">+7 (996) 103-86-03</a>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Icon name="Send" className="text-blue-600" size={24} />
+                  </div>
+                  <div>
+                    <p className="font-semibold mb-1">Telegram</p>
+                    <a href="https://t.me/sdztreding" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-blue-600 transition-colors">@sdztreding</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -606,7 +740,7 @@ export default function Index() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      placeholder="+7 (999) 123-45-67"
+                      placeholder="+7 (996) 103-86-03"
                       required
                     />
                   </div>
@@ -650,6 +784,7 @@ export default function Index() {
               <ul className="space-y-2 text-sm text-slate-400">
                 <li><a href="#problem" className="hover:text-white transition-colors">О проблеме</a></li>
                 <li><a href="#program" className="hover:text-white transition-colors">Программа</a></li>
+                <li><a href="#pricing" className="hover:text-white transition-colors">Цены</a></li>
                 <li><a href="#reviews" className="hover:text-white transition-colors">Отзывы</a></li>
                 <li><a href="#contact" className="hover:text-white transition-colors">Контакты</a></li>
               </ul>
@@ -658,7 +793,9 @@ export default function Index() {
               <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-slate-400">
                 <li>Email: info@menshealth.ru</li>
-                <li>Телефон: +7 (999) 123-45-67</li>
+                <li>Телефон: +7 (996) 103-86-03</li>
+                <li>WhatsApp: +7 (996) 103-86-03</li>
+                <li>Telegram: @sdztreding</li>
                 <li>Пн-Вс: 9:00 - 21:00</li>
               </ul>
             </div>
