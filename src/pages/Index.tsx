@@ -654,7 +654,7 @@ export default function Index() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Email</p>
-                    <p className="text-muted-foreground">info@menshealth.ru</p>
+                    <a href="mailto:sdztreding@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">sdztreding@gmail.com</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -663,7 +663,7 @@ export default function Index() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">Телефон</p>
-                    <a href="tel:+79961038603" className="text-muted-foreground hover:text-primary transition-colors">+7 (996) 103-86-03</a>
+                    <a href="tel:+79961038703" className="text-muted-foreground hover:text-primary transition-colors">+7 (996) 103-87-03</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -672,7 +672,7 @@ export default function Index() {
                   </div>
                   <div>
                     <p className="font-semibold mb-1">WhatsApp</p>
-                    <a href="https://wa.me/79961038603" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-600 transition-colors">+7 (996) 103-86-03</a>
+                    <a href="https://wa.me/79961038703" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-green-600 transition-colors">+7 (996) 103-87-03</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
@@ -740,7 +740,7 @@ export default function Index() {
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                      placeholder="+7 (996) 103-86-03"
+                      placeholder="+7 (996) 103-87-03"
                       required
                     />
                   </div>
@@ -792,9 +792,9 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Контакты</h4>
               <ul className="space-y-2 text-sm text-slate-400">
-                <li>Email: info@menshealth.ru</li>
-                <li>Телефон: +7 (996) 103-86-03</li>
-                <li>WhatsApp: +7 (996) 103-86-03</li>
+                <li>Email: sdztreding@gmail.com</li>
+                <li>Телефон: +7 (996) 103-87-03</li>
+                <li>WhatsApp: +7 (996) 103-87-03</li>
                 <li>Telegram: @sdztreding</li>
                 <li>Пн-Вс: 9:00 - 21:00</li>
               </ul>
